@@ -1,13 +1,14 @@
 {
-  "manifest_version": 2,
   "name": "bye bye wechat",
-  "version": "0.0.2",
   "author": "Ya Zhuang <zhuangya@gmail.com>",
-  "content_scripts": [{
-    "matches": [
-      "https://support.weixin.qq.com/cgi-bin/mmsupport-bin/readtemplate*",
-      "https://weixin110.qq.com/cgi-bin/mmspamsupport-bin/newredirectconfirmcgi*"
-    ],
-    "js": ["auto-redirect.js"]
-  }]
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://weixin110.qq.com/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  }
 }
