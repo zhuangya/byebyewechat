@@ -7,6 +7,10 @@
   "author": "Ya Zhuang <zhuangya@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "webpack",
+    "test": "jest"
+  },
   "dependencies": {
     "query-string": "^6.8.1"
   },
