@@ -1,7 +1,5 @@
 # byebye wechat
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/zhuangya/byebyewechat.svg)](https://greenkeeper.io/)
-
 这只是一个用来给电脑版微信点出来的 link 做自动跳转的小扩展
 
 Google Chrome 扩展地址： https://chrome.google.com/webstore/detail/bye-bye-wechat/bpgmkfdecalnmcpajjpkkphidpknblpp
