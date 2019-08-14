@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "query-string": "6.8.1"
+    "query-string": "6.8.2"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
