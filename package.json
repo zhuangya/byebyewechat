@@ -22,7 +22,7 @@
     "copy-webpack-plugin": "5.0.4",
     "jest": "24.9.0",
     "webpack": "4.39.2",
-    "webpack-cli": "3.3.6",
+    "webpack-cli": "3.3.7",
     "write-file-webpack-plugin": "4.5.1"
   }
 }
