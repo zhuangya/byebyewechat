@@ -9,7 +9,8 @@ export const rewriteUrl = info => {
 
 export const filter = {
   urls: [
-    '*://weixin110.qq.com/*'
+    '*://weixin110.qq.com/*',
+    '*://support.weixin.qq.com/*'
   ],
 };
 

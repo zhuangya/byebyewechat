@@ -1,6 +1,6 @@
 {
   "name": "byebyewechat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "帮助去掉电脑版微信对某些网址的屏蔽",
   "main": "dist/background.js",
   "repository": "git@github.com:zhuangya/byebyewechat.git",
