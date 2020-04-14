@@ -4,7 +4,7 @@ chrome.webRequest.onBeforeRequest.addListener(
   info => {
     const mark = "&url=";
     const redirectUrl = decodeURIComponent(
-      url.slice(url.indexOf(mark) + mark.length).replace(/&.*$/, "")
+      info.url.slice(url.indexOf(mark) + mark.length).replace(/&.*$/, "")
     );
     return { redirectUrl };
   },
