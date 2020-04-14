@@ -1,12 +1,16 @@
 "use strict";
 
 chrome.webRequest.onBeforeRequest.addListener(
-  info => {
+  ({ url = "" }) => {
     const mark = "&url=";
-    const redirectUrl = decodeURIComponent(
-      info.url.slice(url.indexOf(mark) + mark.length).replace(/&.*$/, "")
-    );
-    return { redirectUrl };
+    const markIndex = url.indexOf(mark);
+
+    if (markIndex > -1) {
+      const redirectUrl = decodeURIComponent(
+        url.slice(markIndex + mark.length).replace(/&.*$/, "")
+      );
+      return { redirectUrl };
+    }
   },
   {
     urls: ["*://weixin110.qq.com/*", "*://support.weixin.qq.com/*"]
